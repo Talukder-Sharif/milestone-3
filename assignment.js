@@ -19,3 +19,21 @@ function feetToMile(feet){
     }
     var woodResult = woodCalculator(14, 5, 12)
     console.log(woodResult);
+
+
+
+
+    function tinyFriend(names) {
+        var tinyFriend = names[0];
+        for(var i = 0; i < names.length; i++) {
+            var currentName = names[i];
+            if(currentName > tinyFriend) {
+                tinyFriend = currentName;
+
+            }
+
+        }
+        return tinyFriend;
+    }
+    var smallestName = friends(["fuad", "afsar", "sharif"]);
+    console.log(smallestName);
